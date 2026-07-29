@@ -2,7 +2,7 @@
 
 Portal de apresentação da **Mirae Academy** — plataforma de educação médica continuada para hospitais, em parceria com a RD Medicine.
 
-🔗 **Site publicado:** https://sejamirae.github.io/academy/
+🔗 **Site publicado:** https://academy.sejamirae.com/
 
 ## Estrutura
 
