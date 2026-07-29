@@ -4,6 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mirae Academy — Educação Médica Continuada para Hospitais</title>
+<meta name="description" content="Mirae Academy — plataforma de educação médica continuada para hospitais: onboarding padronizado, trilhas de proficiência, aulas, flashcards e certificação. Em parceria com a RD Medicine.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23002C37'/><circle cx='50' cy='23' r='7' fill='%23E5BC7A'/><text x='50' y='72' font-family='Georgia,serif' font-size='58' font-weight='700' text-anchor='middle' fill='%23F4EFE7'>M</text></svg>">
+<!-- Social preview (WhatsApp, LinkedIn, etc.) -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mirae Academy — Educação Médica Continuada para Hospitais">
+<meta property="og:description" content="Padronize a assistência e acelere o onboarding do seu hospital: trilhas, aulas, flashcards e certificação.">
+<meta property="og:image" content="https://sejamirae.github.io/academy/img/trilhas.png">
+<meta property="og:url" content="https://sejamirae.github.io/academy/">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -123,6 +132,9 @@
   .q-body p{font-size:14.5px;color:var(--muted-dark);font-family:var(--sans)}
   .q-card.q-rd{background:linear-gradient(160deg,#083845,var(--petrol-2))}
   .q-card.q-rd .q-thumb{background:linear-gradient(135deg,#0a3a47,#062028)}
+  .q-rd .rd-plate{background:#fff;border:1px solid var(--line-light);border-radius:16px;padding:22px 34px;box-shadow:0 12px 30px rgba(0,0,0,.28);z-index:2}
+  .q-rd .rd-plate img{height:106px;width:auto;display:block;transition:.4s}
+  .q-card.q-rd:hover .rd-plate img{transform:scale(1.04)}
   .q-cta-row{display:inline-flex;align-items:center;gap:8px;margin-top:14px;font-weight:700;color:var(--gold);font-family:var(--sans);font-size:14px}
   @media(max-width:900px){.q-grid{grid-template-columns:1fr 1fr}}
   @media(max-width:600px){.q-grid{grid-template-columns:1fr}}
@@ -199,7 +211,7 @@
       <div class="q-card"><div class="q-thumb zoomable" onclick="openLB(5)"><span class="q-badge">AnimaMED</span><div class="q-ph"><div><div class="ph-ic">✺</div><div class="ph-tx">AnimaMED<br>(adicione img/animamed.png)</div></div></div><img src="img/animamed.png" alt="AnimaMED conteúdo animado" onerror="this.style.display='none'"></div><div class="q-body"><h3>AnimaMED</h3><p>Conteúdo animado que traduz temas complexos em explicações visuais, claras e fáceis de reter.</p></div></div>
       <div class="q-card"><div class="q-thumb zoomable" onclick="openLB(6)"><span class="q-badge">Certificação</span><div class="q-ph"><div><div class="ph-ic">✓</div><div class="ph-tx">Provas e Certificação<br>(adicione img/certificados.png)</div></div></div><img src="img/certificados.png" alt="Provas e certificação" onerror="this.style.display='none'"></div><div class="q-body"><h3>Provas e certificação</h3><p>Avaliações por trilha com certificado emitido a partir de 70% de acerto — competência comprovável.</p></div></div>
       <div class="q-card"><div class="q-thumb zoomable" onclick="openLB(7)"><span class="q-badge">Indicadores</span><div class="q-ph"><div><div class="ph-ic">▮</div><div class="ph-tx">Estatísticas & Gamificação<br>(adicione img/dashboard.png)</div></div></div><img src="img/dashboard.png" alt="Estatísticas e gamificação" onerror="this.style.display='none'"></div><div class="q-body"><h3>Estatísticas & gamificação</h3><p>Sequência de estudo, progresso por trilha e engajamento que mantêm a equipe ativa e mensurável.</p></div></div>
-      <a class="q-card q-rd" href="https://www.rdmedicine.com/" target="_blank" rel="noopener"><div class="q-thumb"><span class="q-badge">Ecossistema</span><div class="q-ph"><div><div class="ph-ic">↗</div><div class="ph-tx">RD Medicine<br>Conheça o ecossistema completo</div></div></div></div><div class="q-body"><h3>Ecossistema RD Medicine</h3><p>A Mirae é parte de um ecossistema consolidado de educação médica de alto nível.</p><span class="q-cta-row">Visitar rdmedicine.com →</span></div></a>
+      <a class="q-card q-rd" href="https://www.rdmedicine.com/" target="_blank" rel="noopener"><div class="q-thumb"><span class="q-badge">Ecossistema</span><div class="rd-plate"><img src="img/logo-rdmedicine.png" alt="RD Medicine"></div></div><div class="q-body"><h3>Ecossistema RD Medicine</h3><p>A Mirae é parte de um ecossistema consolidado de educação médica de alto nível.</p><span class="q-cta-row">Visitar rdmedicine.com →</span></div></a>
     </div>
   </div>
 </section>
@@ -255,6 +267,7 @@
   footer{background:var(--petrol-2);padding:46px 0;color:var(--muted-dark);font-size:14px;font-family:var(--sans);border-top:1px solid var(--line-dark)}
   .foot-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
   .foot-logo{font-family:var(--serif);font-weight:700;font-size:26px;color:var(--cream)}
+  .foot-logo img{height:34px;width:auto;display:block}
   .foot-logo i{font-style:normal;position:relative}
   .foot-logo i::after{content:"";position:absolute;top:-1px;left:50%;transform:translateX(-50%);width:5px;height:5px;border-radius:50%;background:var(--gold)}
 
@@ -347,7 +360,7 @@
 
 <footer>
   <div class="wrap foot-inner">
-    <div class="foot-logo">M<i>i</i>rae</div>
+    <div class="foot-logo"><img src="img/logo-mirae.png" alt="Mirae"></div>
     <div>© 2026 Mirae · RD Medicine. Todos os direitos reservados.</div>
   </div>
 </footer>
